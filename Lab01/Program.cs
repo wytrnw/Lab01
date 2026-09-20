@@ -76,3 +76,41 @@ double priceWithVat = productPrice * (1 + VatRate);
 
 Console.WriteLine($" Учебное заведение: {CollegeName}");
 Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({VatRate: P0}): {priceWithVat}");
+
+
+
+
+
+
+using System;
+
+class Program;
+
+static void Main();
+
+// Константа: год поступления не меняется
+const int EntryYear = 2024;
+
+// Переменные разных типов
+string name = "Анна Смирнова";
+int age = 19;
+double gpa = 4.8;
+bool isActive = true;
+int credits = 25;
+string course = "Разработка ПО";
+
+// Арифметический расчёт: сколько лет учится студент
+int yearsStudied = 2026 - EntryYear;
+
+ // Красивый вывод через интерполяцию
+Console.WriteLine("========================================");
+Console.WriteLine();
+Console.WriteLine($"Студент: {name}");
+Console.WriteLine($"Курс: {course}");
+Console.WriteLine($"Возраст: {age}, учится уже {yearsStudied} лет");
+Console.WriteLine($"Средний балл: {gpa:F1}");
+Console.WriteLine($"Статус: {(isActive ? "Активен" : "Неактивен")}");
+Console.WriteLine($"Кредитов: {credits}");
+Console.WriteLine();
+Console.WriteLine("========================================");
+
