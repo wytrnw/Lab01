@@ -81,36 +81,21 @@ Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({VatRate:
 
 
 
+int scholarship = 15000;
+int monthlyExpenses = 12000;
 
-using System;
 
-class Program;
+const int MonthsInSemester = 4;
 
-static void Main();
+int monthlyBalance = scholarship - monthlyExpenses;
 
-// Константа: год поступления не меняется
-const int EntryYear = 2024;
 
-// Переменные разных типов
-string name = "Анна Смирнова";
-int age = 19;
-double gpa = 4.8;
-bool isActive = true;
-int credits = 25;
-string course = "Разработка ПО";
+int semesterBalance = monthlyBalance * MonthsInSemester;
 
-// Арифметический расчёт: сколько лет учится студент
-int yearsStudied = 2026 - EntryYear;
-
- // Красивый вывод через интерполяцию
-Console.WriteLine("========================================");
 Console.WriteLine();
-Console.WriteLine($"Студент: {name}");
-Console.WriteLine($"Курс: {course}");
-Console.WriteLine($"Возраст: {age}, учится уже {yearsStudied} лет");
-Console.WriteLine($"Средний балл: {gpa:F1}");
-Console.WriteLine($"Статус: {(isActive ? "Активен" : "Неактивен")}");
-Console.WriteLine($"Кредитов: {credits}");
-Console.WriteLine();
-Console.WriteLine("========================================");
-
+Console.WriteLine("--- Финансовый расчёт ---");
+Console.WriteLine($"Стипендия: {scholarship} руб.");
+Console.WriteLine($"Ежемесячные расходы: {monthlyExpenses} руб.");
+Console.WriteLine($"Остаток за месяц: {monthlyBalance} руб.");
+Console.WriteLine($"Остаток за семестр ({MonthsInSemester} мес.): {semesterBalance} руб.");
+Console.WriteLine("-------------------------");
